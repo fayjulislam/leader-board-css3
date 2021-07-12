@@ -79,5 +79,93 @@ hr{
     font-size: 16px;
  }
  .blog-author a{
-     text-decoration: none;
+    text-decoration: none;
  }
+
+ /* -----------------------------
+ -----latest courses styles -----
+ --------------------------------*/
+ .courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+ }
+ .course{
+    width: 252.42px;
+    /* filter: drop-shadow(0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05)); */
+    box-shadow: 0px 5.34229px 13.3557px rgba(0, 0, 0, 0.05);
+    padding: 15px
+ }
+ .course-image img{
+    width: 245px;
+    height: 115px;
+ }
+ .course-title{
+     font-size: 20px;
+ }
+ .course-author{
+    color: #ED6B4F;
+ }
+ .course-info{
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .filled-color{
+    color: #FFC014;
+ }
+.empty-color{
+    color: #AEAEAE;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    color: #FF4A60;
+    border-radius: 14.6913px;
+    padding: 2px 10px;
+}
+
+/* --------------------
+        media queries  
+   --------------------*/
+
+   /* mobile devices */
+
+   @media only screen and (max-width: 668px) {
+        .container{
+            width: 100%;
+        }   
+        .players, .top-blogs, .courses{
+                width: 100%;
+                grid-template-columns: repeat(1, 1fr);
+        }
+       .player, .top-blogs{
+           flex-direction: column;
+           justify-content: center;
+       }
+       .blogs{
+           flex-direction: column
+       }
+   }
+
+   /* tablet devices */
+
+   @media only screen and (min-width: 668px) and (max-width: 992px) {
+       .container{
+           width: 100%;
+       }
+       .players{
+                width: 100%;
+                grid-template-columns: repeat(2, 1fr);
+        }
+        .player, .top-blogs{
+           flex-direction: column;
+       }
+       .top-blogs{
+           grid-template-columns: repeat(1, 1fr);
+       }
+       .courses{
+           grid-template-columns: repeat(1, 1fr);
+           justify-content: center;
+       }
+   }

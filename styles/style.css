@@ -3,6 +3,7 @@
 
 /* common styles and utilities starts*/
 body{
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;;
 }
@@ -14,7 +15,51 @@ main{
 h3{
     font-size: 18px;
 }
+
+/*----------------------- 
+          header styles       
+----------------------------*/
 /* common styles and utilities end */
+.navbar{
+    background-color: #562EFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo img{
+    width: 40.42px;
+    height: 51px;
+}
+.logo-text{
+    color: white;
+    margin-left: 15px;
+}
+.left-nav-items {
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 18%;
+}
+.right-nav-items{
+    display: flex;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 18%;
+    justify-content: space-between;
+}
+.menu-items {
+    display: flex;
+    list-style: none;
+}
+.menu-items a{
+    text-decoration: none;
+    padding-right: 36px;
+    color: white;
+}
+.profile-image {
+    width: 40px;
+    height: 51px;
+}
 .container{
     background-color: #FFFFFF;
     width: 870px;
@@ -111,6 +156,7 @@ hr{
     font-size: 14px;
     align-items: center;
     justify-content: space-between;
+    padding-right: 20px;
  }
  .filled-color{
     color: #FFC014;
@@ -169,3 +215,4 @@ hr{
            justify-content: center;
        }
    }
+
